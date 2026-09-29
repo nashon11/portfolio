@@ -183,8 +183,8 @@ footer{border-top:1px solid var(--line);padding:1.5rem 0;color:var(--muted);font
 
 <script>
 /* ---------- CONTENT: edit here. Yellow "To add" boxes mark facts I don't have yet. ---------- */
-const T = t => `<p class="todo"><strong>To add:</strong> ${t}</p>`;
-const DRAFT = `<p class="todo"><strong>Draft:</strong> rewrite this in your own words.</p>`;
+const T = () => '';
+const DRAFT = '';
 const shots = n => `<div class="shots">${'<div class="ph">Screenshot placeholder</div>'.repeat(n)}</div>`;
 const ul = a => `<ul>${a.map(i => `<li>${i}</li>`).join('')}</ul>`;
 const ol = a => `<ol>${a.map(i => `<li>${i}</li>`).join('')}</ol>`;
@@ -199,11 +199,9 @@ const P = {
       ['The problem / purpose', '<p>For this project, I focused on the path from looking for a hotel to paying for it: finding the right place quickly, trusting the sign-in, and getting through payment.</p>'],
       ['My role', '<p>I developed EZ-Stay.</p>' + T('whether you built it alone or with others, and whether you also designed the screens.')],
       ['What I built', ul(['Secure authentication', 'Payment integration', 'A search and filter feature', 'Database query optimization, which improved load times by 40%'])],
-      ['User flow', ol(['Search and filter hotels', 'Sign in or create an account', 'Pay for the booking']) + T('the real steps and screens, such as room selection and confirmation.')],
+      ['User flow', ol(['Search and filter hotels', 'Sign in', 'Pay for the booking']) + T('the real steps and screens, such as room selection and confirmation.')],
       ['Interface / design', shots(2) + T('screenshots, and a sentence or two on layout decisions you made.')],
-      ['Important states', '<p>A booking flow has a few places where things can go wrong: payment, sign-in and searches with no results. I would like to show how EZ-Stay handles each one.</p>' + T('the states you actually handled.')],
       ['Technical implementation', '<p>My work on EZ-Stay covered authentication, payment integration, search and filter, and database query optimization.</p>' + T('the tech stack and the payment provider.')],
-      ['What I learned', '<p>Speeding up the queries was a reminder that performance is part of the experience. People notice a slow page long before they notice clean code.</p>' + DRAFT]
     ]
   },
   'taskmaster': {
@@ -214,12 +212,10 @@ const P = {
       ['Overview', '<p>TaskMaster is a task management tool. Updates arrive in real time using WebSockets.</p>'],
       ['The problem / purpose', '<p>For this project, I focused on making a task tool feel current: when something changes, the screen updates without a page refresh. I also wanted the interface to make finishing tasks easy.</p>'],
       ['My role', '<p>I developed TaskMaster.</p>' + T('whether you built it alone or with others, and whether you designed the UI yourself.')],
-      ['What I built', ul(['Real-time updates using WebSockets', 'An interface designed to be intuitive to use', 'My CV records a 30% improvement in task completion rates']) + T('how that 30% was measured.')],
+      ['What I built', ul(['Real-time updates using WebSockets', 'An interface designed to be intuitive to use', 'Improved task completion rates by 30% through intuitive UX design']) + T('how that 30% was measured.')],
       ['User flow', T('the main steps, such as creating, updating and completing a task.')],
       ['Interface / design', shots(2) + T('screenshots, and what you did to keep the UX simple.')],
-      ['Important states', '<p>Real-time features bring their own edge cases, like a dropped connection or two changes to the same task at once. I would like to document how TaskMaster deals with them.</p>' + T('the states you actually handled.')],
       ['Technical implementation', '<p>Real-time updates run over WebSockets.</p>' + T('the frontend, backend and database you used.')],
-      ['What I learned', '<p>Real-time updates changed how I think about the UI. The screen is not only reacting to the person using it, it is also reacting to the server.</p>' + DRAFT]
     ]
   },
   'finance-app': {
@@ -233,9 +229,7 @@ const P = {
       ['What I built', ul(['Role-based authentication', 'Responsive UI designs in Lunacy and Penpot']) + T('what users can actually do in the app.')],
       ['User flow', '<p>Users sign in, and what they see and can do depends on their role.</p>' + T('the roles and the main screens for each.')],
       ['Interface / design', '<p>I designed the screens in Lunacy and Penpot and made them responsive.</p>' + shots(2) + T('screenshots or design files.')],
-      ['Important states', '<p>Role-based access forces you to design what someone sees when they do not have permission. I would like to show how this app handles that.</p>' + T('the states you actually handled.')],
       ['Technical implementation', '<p>Role-based authentication controls access across the app.</p>' + T('the tech stack.')],
-      ['What I learned', '<p>Designing screens in Lunacy and Penpot first made me think about layouts and states before writing the code.</p>' + DRAFT]
     ]
   },
   'skyview': {
@@ -273,7 +267,7 @@ function renderCase(k) {
   const imgs = IMG[k].map((src, i) => `<img src="${src}" alt="${p.name} screenshot ${i + 1}" loading="lazy">`).join('');
   cs.innerHTML = `<a class="back" href="#/work">Back to selected work</a>
   <h1 tabindex="-1">${p.name}</h1><p class="lead">${p.blurb}</p>
-  ${p.sections.map(([t, c]) => `<section class="cs"><h2>${t}</h2><div>${imgs ? c.replace(/<div class="shots">[\s\S]*?<\/div><\/div>/, `<div class="shots">${imgs}</div>`) : c}</div></section>`).join('')}
+  ${p.sections.map(([t, c]) => [t, c.replace(/<div class="shots">[\s\S]*?<\/div><\/div>/, imgs ? `<div class="shots">${imgs}</div>` : '')]).filter(([, c]) => c.trim()).map(([t, c]) => `<section class="cs"><h2>${t}</h2><div>${c}</div></section>`).join('')}
   <div class="btns"><a class="btn ghost" href="https://github.com/nashon11" target="_blank" rel="noopener">View GitHub</a><a class="btn" href="mailto:mwendamutai@gmail.com">Contact Me</a></div>`;
   document.title = p.name + ' | Mwenda Mutai';
 }
