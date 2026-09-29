@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mwenda Mutai | Full-Stack Software Engineer, Product &amp; UI Design</title>
+<meta name="description" content="Portfolio of Mwenda Mutai, a full-stack software engineer in Nairobi, Kenya who builds web products and is growing into product and UI design.">
+<meta property="og:title" content="Mwenda Mutai | Full-Stack Software Engineer, Product &amp; UI Design">
+<meta property="og:description" content="Web projects, case studies and how I work between design and engineering.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%232547D0'/%3E%3Ctext x='16' y='22' font-size='17' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='white'%3EM%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Mwenda Mutai","jobTitle":"Full-Stack Software Engineer","email":"mwendamutai@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Nairobi","addressCountry":"KE"},"sameAs":["https://www.linkedin.com/in/mwenda-mutai-bab0062b4/","https://github.com/nashon11"]}</script>
+<style>
+:root{--bg:#F6F7F9;--surface:#fff;--ink:#16202E;--muted:#55606F;--accent:#2547D0;--line:#D9DEE6;--warn:#FFF6DA;--warnline:#C99A00}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#10151D;--surface:#171E29;--ink:#E9EDF3;--muted:#A5B0BF;--accent:#8FA6FF;--line:#2A3444;--warn:#2B2510;--warnline:#B58B00}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:4.5rem}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 "IBM Plex Sans",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:"Bricolage Grotesque","IBM Plex Sans",system-ui,sans-serif;line-height:1.15;margin:0;letter-spacing:-.01em}
+a{color:var(--accent)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:3px}
+.skip{position:absolute;left:-999px;top:0;background:var(--ink);color:var(--bg);padding:.6rem 1rem;z-index:9}
+.skip:focus{left:0}
+.wrap{max-width:1040px;margin:0 auto;padding:0 1.25rem}
+header.top{border-bottom:1px solid var(--line);padding:.9rem 0;position:sticky;top:0;background:var(--bg);z-index:5}
+header.top .wrap{display:flex;flex-wrap:wrap;gap:.4rem 1.5rem;justify-content:space-between;align-items:center}
+.brand{font:700 1.15rem "Bricolage Grotesque",sans-serif;color:var(--ink);text-decoration:none}
+nav ul{display:flex;flex-wrap:wrap;gap:.2rem 1.25rem;list-style:none;margin:0;padding:0}
+nav a{color:var(--ink);text-decoration:none;font-size:.95rem;padding:.2rem 0;border-bottom:2px solid transparent}
+nav a:hover{border-color:var(--accent)}
+section{padding:4rem 0}
+h2{font-size:clamp(1.6rem,4vw,2.2rem);margin-bottom:1.5rem}
+.hero{padding:4.5rem 0 3.5rem;animation:in .7s ease-out both}
+@keyframes in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.hero h1{font-size:clamp(2.3rem,7vw,4.2rem);max-width:15ch}
+.role{font-weight:600;margin:1.25rem 0 .25rem}
+.hero p{max-width:60ch}
+.muted{color:var(--muted)}
+.btns{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.4rem}
+.btn{display:inline-block;padding:.65rem 1.1rem;border-radius:6px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;font-size:.98rem;border:2px solid var(--accent)}
+@media(prefers-color-scheme:dark){.btn{color:#10151D}}
+.btn.ghost{background:transparent;color:var(--accent)}
+.btn:hover{filter:brightness(1.1)}
+.grid{display:grid;gap:1.25rem}
+@media(min-width:720px){.grid{grid-template-columns:1fr 1fr}}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:1rem;display:flex;flex-direction:column}
+.card h3{font-size:1.3rem;margin:1rem 0 .4rem}
+.card p{margin:0 0 .8rem}
+.card .btns{margin-top:auto;padding-top:.4rem}
+.ph{aspect-ratio:16/10;display:grid;place-items:center;text-align:center;background:#EBEEF3;color:#4A5565;border:2px dashed #9AA5B4;border-radius:4px;font-size:.9rem;padding:.5rem}
+@media(prefers-color-scheme:dark){.ph{background:#1D2633;color:#A5B0BF;border-color:#48566B}}
+.card img,.shots img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;object-position:top;border:1px solid var(--line);border-radius:4px;background:var(--line)}
+.cover{aspect-ratio:16/10;display:flex;align-items:flex-end;padding:1rem;border-radius:4px;background:hsl(var(--h) 55% 92%);color:hsl(var(--h) 50% 20%);font:700 1.6rem/1.15 "Bricolage Grotesque",sans-serif;border:1px solid var(--line)}
+@media(prefers-color-scheme:dark){.cover{background:hsl(var(--h) 25% 20%);color:hsl(var(--h) 60% 92%)}}
+.chips{display:flex;flex-wrap:wrap;gap:.4rem;list-style:none;padding:0;margin:0 0 .8rem}
+.chips li{font-size:.82rem;border:1px solid var(--line);border-radius:99px;padding:.1rem .65rem;color:var(--muted)}
+.flow{list-style:none;margin:2rem 0;padding:0;display:grid;gap:0;border-left:2px solid var(--accent)}
+.flow li{padding:0 0 1.4rem 1.4rem;position:relative}
+.flow li::before{content:"";position:absolute;left:-7px;top:.5rem;width:12px;height:12px;border-radius:50%;background:var(--accent)}
+.flow b{display:block;font:700 1.1rem "Bricolage Grotesque",sans-serif}
+.flow span{color:var(--muted);font-size:.95rem}
+@media(min-width:900px){.flow{grid-template-columns:repeat(5,1fr);border-left:0;border-top:2px solid var(--accent);gap:1rem}.flow li{padding:1.4rem 0 0}.flow li::before{left:0;top:-7px}}
+.prose{max-width:66ch}
+.prose p{margin:0 0 1rem}
+address{font-style:normal}
+.contact dl{display:grid;grid-template-columns:auto 1fr;gap:.4rem 1.5rem;margin:0 0 1rem}
+.contact dt{color:var(--muted)}
+.contact dd{margin:0}
+.back{display:inline-block;margin-bottom:1.5rem}
+#case{padding:3rem 0 4rem}
+#case h1{font-size:clamp(2rem,6vw,3.2rem);margin-bottom:.8rem}
+.lead{font-size:1.2rem;max-width:56ch}
+.cs{display:grid;gap:.4rem 3rem;padding:1.8rem 0;border-top:1px solid var(--line)}
+.cs h2{font-size:1.25rem;margin:0}
+@media(min-width:800px){.cs{grid-template-columns:200px 1fr}}
+.cs ul,.cs ol{margin:0 0 1rem;padding-left:1.2rem}
+.cs p{margin:0 0 1rem;max-width:62ch}
+.shots{display:grid;gap:1rem;margin-bottom:1rem}
+@media(min-width:600px){.shots{grid-template-columns:1fr 1fr}}
+.todo{background:var(--warn);border-left:4px solid var(--warnline);padding:.6rem .9rem;font-size:.95rem;border-radius:0 4px 4px 0}
+footer{border-top:1px solid var(--line);padding:1.5rem 0;color:var(--muted);font-size:.9rem}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top"><div class="wrap">
+  <a class="brand" href="#/">Mwenda Mutai</a>
+  <nav aria-label="Main"><ul>
+    <li><a href="#/work">Work</a></li>
+    <li><a href="#/design">Design + Engineering</a></li>
+    <li><a href="#/about">About</a></li>
+    <li><a href="#/contact">Contact</a></li>
+  </ul></nav>
+</div></header>
+
+<main id="main" class="wrap">
+<div id="home">
+  <div class="hero">
+    <h1>Hi, I'm Mwenda. I build software and care how people use it.</h1>
+    <p class="role">Full-Stack Software Engineer | Product &amp; UI Design</p>
+    <p>I'm a full-stack software engineer who enjoys turning ideas into useful products. I work across frontend, backend and cloud, but I also care about the interface, the user flow and how the whole thing feels to use. Design is the side I'm still growing into.</p>
+    <div class="btns">
+      <a class="btn" href="#/work">See my work</a>
+      <a class="btn ghost" href="https://github.com/nashon11" target="_blank" rel="noopener">View GitHub</a>
+      <a class="btn ghost" href="mailto:mwendamutai@gmail.com">Contact Me</a>
+    </div>
+  </div>
+
+  <section id="work" aria-labelledby="work-h">
+    <h2 id="work-h">Selected work</h2>
+    <div class="grid" id="cards"></div>
+  </section>
+
+  <section id="design" aria-labelledby="design-h">
+    <h2 id="design-h">Design + Engineering</h2>
+    <div class="prose">
+      <p>I sit between design and engineering. Because I write the code, I know what happens after a design leaves Figma: layouts have to survive real data and small screens, and every state has to exist somewhere in the code. I try to think about that earlier, while I'm still designing. I'm newer to design than to engineering, and I'm building that side project by project.</p>
+    </div>
+    <ol class="flow" aria-label="How I work">
+      <li><b>Idea</b><span>What is it for, and who will use it?</span></li>
+      <li><b>User flow</b><span>The steps someone takes, and where they could get stuck.</span></li>
+      <li><b>Interface</b><span>Screens and states in Figma, Lunacy or Penpot.</span></li>
+      <li><b>Implementation</b><span>React, Next.js, JavaScript, FastAPI, Node.js, PostgreSQL, MongoDB, Redis.</span></li>
+      <li><b>Testing</b><span>Integration testing, with Git/GitHub, Docker, CI/CD and a little AWS to get it out.</span></li>
+    </ol>
+  </section>
+
+  <section id="about" aria-labelledby="about-h">
+    <h2 id="about-h">About me</h2>
+    <div class="prose">
+      <p>I'm a full-stack software engineer based in Nairobi. I started freelancing in December 2023 and, until October 2024, built ChoiceMate and a finance management app with role-based authentication and responsive UI designs in Lunacy and Penpot. After that I completed a Graduate Diploma in Fullstack Software Engineering at Moringa School / Flatiron School and a Data Structures &amp; Algorithms course at Zindua School.</p>
+      <p>In 2025 I did a tech ops attachment at Zindua, where I maintained their LMS and worked on authentication, dashboard features and integration testing. I then finished their DevOps Engineering course in August 2025, covering CI/CD, Docker and Kubernetes.</p>
+      <p>Design is the part I'm growing into. I use Figma, Lunacy and Penpot, and I want to keep getting better at product and UI work while I keep building.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact" aria-labelledby="contact-h">
+    <h2 id="contact-h">Contact</h2>
+    <address><dl>
+      <dt>Email</dt><dd><a href="mailto:mwendamutai@gmail.com">mwendamutai@gmail.com</a></dd>
+      <dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/mwenda-mutai-bab0062b4/" target="_blank" rel="noopener">linkedin.com/in/mwenda-mutai-bab0062b4</a></dd>
+      <dt>GitHub</dt><dd><a href="https://github.com/nashon11" target="_blank" rel="noopener">github.com/nashon11</a></dd>
+      <dt>Location</dt><dd>Nairobi, Kenya</dd>
+    </dl></address>
+    <a class="btn" href="mailto:mwendamutai@gmail.com">Contact Me</a>
+  </section>
+</div>
+
+<article id="case" hidden></article>
+</main>
+
+<footer><div class="wrap">&copy; 2026 Mwenda Mutai</div></footer>
+
+<script>
+/* ---------- CONTENT: edit here. Yellow "To add" boxes mark facts I don't have yet. ---------- */
+const T = t => `<p class="todo"><strong>To add:</strong> ${t}</p>`;
+const DRAFT = `<p class="todo"><strong>Draft:</strong> rewrite this in your own words.</p>`;
+const shots = n => `<div class="shots">${'<div class="ph">Screenshot placeholder</div>'.repeat(n)}</div>`;
+const ul = a => `<ul>${a.map(i => `<li>${i}</li>`).join('')}</ul>`;
+const ol = a => `<ol>${a.map(i => `<li>${i}</li>`).join('')}</ol>`;
+
+const P = {
+  'ez-stay': {
+    name: 'EZ-Stay Hotel Booking', cs: true, demo: null,
+    blurb: 'A hotel booking system with secure sign-in, payments, and search and filter.',
+    tags: ['Authentication', 'Payments', 'Search & filter'],
+    sections: [
+      ['Overview', '<p>EZ-Stay is a hotel booking system. People can search and filter hotels, sign in securely and pay for a booking.</p>'],
+      ['The problem / purpose', '<p>For this project, I focused on the path from looking for a hotel to paying for it: finding the right place quickly, trusting the sign-in, and getting through payment.</p>'],
+      ['My role', '<p>I developed EZ-Stay.</p>' + T('whether you built it alone or with others, and whether you also designed the screens.')],
+      ['What I built', ul(['Secure authentication', 'Payment integration', 'A search and filter feature', 'Database query optimization, which improved load times by 40%'])],
+      ['User flow', ol(['Search and filter hotels', 'Sign in or create an account', 'Pay for the booking']) + T('the real steps and screens, such as room selection and confirmation.')],
+      ['Interface / design', shots(2) + T('screenshots, and a sentence or two on layout decisions you made.')],
+      ['Important states', '<p>A booking flow has a few places where things can go wrong: payment, sign-in and searches with no results. I would like to show how EZ-Stay handles each one.</p>' + T('the states you actually handled.')],
+      ['Technical implementation', '<p>My work on EZ-Stay covered authentication, payment integration, search and filter, and database query optimization.</p>' + T('the tech stack and the payment provider.')],
+      ['What I learned', '<p>Speeding up the queries was a reminder that performance is part of the experience. People notice a slow page long before they notice clean code.</p>' + DRAFT]
+    ]
+  },
+  'taskmaster': {
+    name: 'TaskMaster', cs: true, demo: null,
+    blurb: 'A task management tool with real-time updates over WebSockets.',
+    tags: ['WebSockets', 'Real-time', 'UX'],
+    sections: [
+      ['Overview', '<p>TaskMaster is a task management tool. Updates arrive in real time using WebSockets.</p>'],
+      ['The problem / purpose', '<p>For this project, I focused on making a task tool feel current: when something changes, the screen updates without a page refresh. I also wanted the interface to make finishing tasks easy.</p>'],
+      ['My role', '<p>I developed TaskMaster.</p>' + T('whether you built it alone or with others, and whether you designed the UI yourself.')],
+      ['What I built', ul(['Real-time updates using WebSockets', 'An interface designed to be intuitive to use', 'My CV records a 30% improvement in task completion rates']) + T('how that 30% was measured.')],
+      ['User flow', T('the main steps, such as creating, updating and completing a task.')],
+      ['Interface / design', shots(2) + T('screenshots, and what you did to keep the UX simple.')],
+      ['Important states', '<p>Real-time features bring their own edge cases, like a dropped connection or two changes to the same task at once. I would like to document how TaskMaster deals with them.</p>' + T('the states you actually handled.')],
+      ['Technical implementation', '<p>Real-time updates run over WebSockets.</p>' + T('the frontend, backend and database you used.')],
+      ['What I learned', '<p>Real-time updates changed how I think about the UI. The screen is not only reacting to the person using it, it is also reacting to the server.</p>' + DRAFT]
+    ]
+  },
+  'finance-app': {
+    name: 'Finance Management App', cs: true, demo: null,
+    blurb: 'A freelance finance app with role-based authentication and responsive UI designed in Lunacy and Penpot.',
+    tags: ['Role-based auth', 'Lunacy', 'Penpot', 'Freelance'],
+    sections: [
+      ['Overview', '<p>A finance management app I built during my remote freelance work (December 2023 to October 2024). It uses role-based authentication and has responsive UI designs made in Lunacy and Penpot.</p>'],
+      ['The problem / purpose', '<p>Finance tools hold sensitive information, so who can see and do what really matters. For this project, I focused on role-based access and on screens that work on small displays.</p>' + T('what the app is for and who it was built for.')],
+      ['My role', '<p>Freelance software engineer, working remotely. I built the app and worked on its UI designs.</p>'],
+      ['What I built', ul(['Role-based authentication', 'Responsive UI designs in Lunacy and Penpot']) + T('what users can actually do in the app.')],
+      ['User flow', '<p>Users sign in, and what they see and can do depends on their role.</p>' + T('the roles and the main screens for each.')],
+      ['Interface / design', '<p>I designed the screens in Lunacy and Penpot and made them responsive.</p>' + shots(2) + T('screenshots or design files.')],
+      ['Important states', '<p>Role-based access forces you to design what someone sees when they do not have permission. I would like to show how this app handles that.</p>' + T('the states you actually handled.')],
+      ['Technical implementation', '<p>Role-based authentication controls access across the app.</p>' + T('the tech stack.')],
+      ['What I learned', '<p>Designing screens in Lunacy and Penpot first made me think about layouts and states before writing the code.</p>' + DRAFT]
+    ]
+  },
+  'skyview': {
+    name: 'SkyView Weather App', cs: false, demo: 'https://nashon11.github.io/SkyView-Weather-App/',
+    blurb: 'A real-time weather app built with FastAPI and the OpenWeather API, with Redis caching that cut API response time by 50%.',
+    tags: ['FastAPI', 'OpenWeather API', 'Redis'], sections: []
+  },
+  'choicemate': {
+    name: 'ChoiceMate', cs: false, demo: null,
+    blurb: 'A freelance project with role-based authentication and responsive UI designs made in Lunacy and Penpot.',
+    tags: ['Role-based auth', 'Lunacy', 'Penpot', 'Freelance'], sections: []
+  }
+};
+P.skyview.blurb += ' It covers 50+ global cities.';
+
+/* Screenshots: put image files in /images and list them here. The first one is the card image; all are shown in the case study. */
+const IMG = { 'ez-stay': [], 'taskmaster': [], 'finance-app': [], 'skyview': [], 'choicemate': [] };
+/* Example: 'skyview': ['images/skyview-1.png', 'images/skyview-2.png'] */
+
+const HUE = { 'ez-stay': 225, 'taskmaster': 200, 'finance-app': 160, 'skyview': 210, 'choicemate': 265 };
+
+/* ---------- RENDERING ---------- */
+const card = (k, p) => `<article class="card">
+  ${IMG[k][0] ? `<img src="${IMG[k][0]}" alt="Screenshot of ${p.name}" loading="lazy">` : `<div class="cover" style="--h:${HUE[k]}" role="img" aria-label="${p.name} cover">${p.name}</div>`}
+  <h3>${p.name}</h3><p>${p.blurb}</p>
+  <ul class="chips">${p.tags.map(t => `<li>${t}</li>`).join('')}</ul>
+  <div class="btns">${p.cs ? `<a class="btn" href="#/work/${k}">Read case study</a>` : ''}${p.demo ? `<a class="btn ghost" href="${p.demo}" target="_blank" rel="noopener">View Project</a>` : ''}</div>
+</article>`;
+document.getElementById('cards').innerHTML = Object.entries(P).map(([k, p]) => card(k, p)).join('');
+
+const home = document.getElementById('home'), cs = document.getElementById('case');
+const BASE = document.title;
+function renderCase(k) {
+  const p = P[k];
+  const imgs = IMG[k].map((src, i) => `<img src="${src}" alt="${p.name} screenshot ${i + 1}" loading="lazy">`).join('');
+  cs.innerHTML = `<a class="back" href="#/work">Back to selected work</a>
+  <h1 tabindex="-1">${p.name}</h1><p class="lead">${p.blurb}</p>
+  ${p.sections.map(([t, c]) => `<section class="cs"><h2>${t}</h2><div>${imgs ? c.replace(/<div class="shots">[\s\S]*?<\/div><\/div>/, `<div class="shots">${imgs}</div>`) : c}</div></section>`).join('')}
+  <div class="btns"><a class="btn ghost" href="https://github.com/nashon11" target="_blank" rel="noopener">View GitHub</a><a class="btn" href="mailto:mwendamutai@gmail.com">Contact Me</a></div>`;
+  document.title = p.name + ' | Mwenda Mutai';
+}
+function route() {
+  const [a, b] = location.hash.replace(/^#\/?/, '').split('/');
+  if (a === 'work' && P[b] && P[b].cs) {
+    renderCase(b); home.hidden = true; cs.hidden = false;
+    scrollTo(0, 0); cs.querySelector('h1').focus({ preventScroll: true });
+    return;
+  }
+  cs.hidden = true; home.hidden = false; document.title = BASE;
+  const el = a && document.getElementById(a);
+  el ? el.scrollIntoView() : scrollTo(0, 0);
+}
+addEventListener('hashchange', route);
+route();
+</script>
+</body>
+</html>
